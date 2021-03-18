@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+.contact-list {
+  background-color: #cfe1e7;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: monospace;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contact {
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #446d8059;
+  padding: 20px;
+  margin: 15px;
+  width: 400px;
+  display: flex;
+}
+.photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #6995a959;
+}
+
+.info {
+  margin-left: 20px;
+}
+.info p {
+  font-size: 22px;
+}
+
+.buttons {
+  padding: 0 10px;
+}
+
+.call,
+.message {
+  width: 30px;
+}
+
+/*
+ZADÁNÍ:
+Prohlédni si strukturu HTML. Potom nastyluj stránku, aby odpovídala výslednému obrázku.
+- Urči si, co jsou flex-kontejnery, a co flex-položky.
+- Flexboxy jdou do sebe vnořovat. Takže položka jednoho flexboxu, může být zároveň sama o sobě flexboxem a zarovnávat uvnitř sebe jiné položky.
+
+Všimni si, že kontakty sdílí názvy tříd, takže když nastyluješ jeden, styluješ všechny zároveň.
+Není potřeba elementy už dále stylovat. Používej pouze vlastnosti, které jsme se naučili k flexboxu.
+*/
+
+.contact-list {
+  /* zajisti, aby se kartičky s kontakty zobrazily vedle sebe a vycentrovaly.
+  Pokud se vedle sebe nevejdou, ať se zalomí na další řádek.  */
+}
+
+.contact {
+  /* obsah v každé kartiče by měl být vedle sebe */
+}
+
+.info {
+  /* položka v kontaktu, která obsahuje jméno a číslo, se roztahuje a zabírá ve flexboxu veškeré volné místo */
+  flex: 1 1 auto;
+}
+
+.buttons {
+  /* Ikony volání a zprávy jsou ve svém kontejneru zarovnané pod sebe.
+  Před, mezi i za ikonkami je rovnoměrná mezera */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
